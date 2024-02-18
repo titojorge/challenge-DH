@@ -1,9 +1,9 @@
-// const db = require('../../database/models');
-const Aspirantes = require('../../database/models/Aspirante');
+const db = require('../../database/models');
+const Aspirante = require('../../database/models/Aspirante');
 
 const aspiranteApiController = {
     list: (req, res) => {
-        Aspirantes
+        db.Aspirante
             .findAll()
             .then(aspirantes => {
                 const data = []

@@ -5,6 +5,7 @@ const path = require("path");
 const app = express();
 const upload = multer ({ dest: './public/images/perfiles'})//PRUEBA MULTER
 const cors = require('cors')
+const aspiranteRouter = require('./src/routes/api/aspirantes')
 
 /**------METODOS DE APLICACION GLOBAL------*/
 app.use(cors());
@@ -13,7 +14,7 @@ app.use(express.urlencoded({ extended: false })); // Formularios sean procesados
 app.use(express.json());
 
 /**------RUTAS------*/
-// app.use('/', mainRouter)
+app.use('/', aspiranteRouter)
 
 app.listen(3000, () => {
   console.log("Success puerto 3000");
