@@ -18,6 +18,7 @@ const aspiranteApiController = {
                         email: aspirante.email,
                         telefono: aspirante.telefono,
                         fecha_nacimiento: aspirante.fecha_nacimiento,
+                        perfil_linkedin: aspirante.perfil_linkedin,
                         sexo: aspirante.sexo,
                         imagen_perfil: aspirante.imagen_perfil
                     };
