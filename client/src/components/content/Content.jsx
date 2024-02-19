@@ -3,7 +3,7 @@ import './content.css'
 
 function Content() {
   return (
-    <img src="" alt="" />
+    <div className='content'>Q</div>
   );
 }
 
