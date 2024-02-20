@@ -10,8 +10,8 @@ const aspiranteApiController = {
                 aspirantes.forEach(aspirante => {
                     let dataAspirante = {
                         id: aspirante.id,
-                        nombre: aspirante.nombre,
-                        apellido: aspirante.apellido,
+                        nombres: aspirante.nombres,
+                        apellidos: aspirante.apellidos,
                         username: aspirante.username,
                         dni: aspirante.dni,
                         rol: aspirante.rol,
