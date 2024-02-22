@@ -85,18 +85,16 @@ module.exports = (sequelize, dataTypes) => {
     let config = {
         timestamps: false,
         tableName: 'aspirantes',
-        // createdAt: 'created_at',
-        // updatedAt: 'updated_at',
         deletedAt: false
     }
     const Aspirante = sequelize.define(alias, cols, config); 
 
-    // Aspirante.associate = function(models){
-    //     Aspirante.belongsTo(models.CategoryProduct, {
-    //         as: "categoriaProduct",
-    //         foreignKey: "category_producto_id"
-    //     })
-    // }
+    Aspirante.associate = function(models){
+        Aspirante.hasMany(models.Aspirantes_Profesiones, {
+            as: "AspirantesProfesiones",
+            foreignKey: "id_aspirante"
+        })
+    }
  
     return Aspirante
 };

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-02-2024 a las 22:27:30
+-- Tiempo de generación: 20-02-2024 a las 01:43:54
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `challenge_dh_aspirantes`
+-- Base de datos: `recruitingrh`
 --
-CREATE DATABASE IF NOT EXISTS `challenge_dh_aspirantes` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `challenge_dh_aspirantes`;
+CREATE DATABASE IF NOT EXISTS `recruitingrh` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `recruitingrh`;
 
 -- --------------------------------------------------------
 
@@ -36,10 +36,10 @@ CREATE TABLE `aspirantes` (
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(100) NOT NULL,
   `dni` int(11) NOT NULL,
-  `rol` int(11) NOT NULL,
+  `rol` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `telefono` varchar(50) NOT NULL,
-  `perfiil_linkedin` varchar(50) NOT NULL,
+  `perfil_linkedin` varchar(50) NOT NULL,
   `fecha_nacimiento` datetime NOT NULL,
   `sexo` varchar(50) NOT NULL,
   `imagen_perfil` varchar(100) NOT NULL,
@@ -50,6 +50,14 @@ CREATE TABLE `aspirantes` (
   `fecha_eliminacion` datetime NOT NULL,
   `usuario_eliminacion` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `aspirantes`
+--
+
+INSERT INTO `aspirantes` (`id`, `nombres`, `apellidos`, `username`, `password`, `dni`, `rol`, `email`, `telefono`, `perfil_linkedin`, `fecha_nacimiento`, `sexo`, `imagen_perfil`, `fecha_creacion`, `usuario_creacion`, `fecha_modificacion`, `usuario_modificacion`, `fecha_eliminacion`, `usuario_eliminacion`) VALUES
+(0, 'Lionel', 'Messi', 'lmessi', '123456', 91213321, 'admin', 'lmessi@gmail.com', '12347677', 'https://www.linkedin.com/in/lmessi/', '1991-01-09 21:34:13', 'Masculino', 'none', '2024-02-19 01:34:13', 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
+(1, 'Ezequiel', 'Barco', 'ebarco', '123412321', 91213322, 'aspirante', 'ebarco@gmail.com', '12347677', 'https://www.linkedin.com/in/ebarco/', '1995-01-11 21:37:39', 'Masculino', 'none', '2024-02-19 01:37:39', 1, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 

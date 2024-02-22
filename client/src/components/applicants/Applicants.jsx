@@ -25,7 +25,7 @@ const Applicants = () => {
         <Row>
             <h2>Aspirantes</h2>
         </Row>
-        <Row xs={1} md={3}>
+        <Row xs={1} md={2} lg={3} xl={4}>
             <Col className='col-card'>
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="../../public/images/foto6.jpg" />
