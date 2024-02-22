@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Professions from './components/professions/Professions'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
       <Row>
         <Col>
           <Professions />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Footer />
         </Col>
       </Row>
     </Container>

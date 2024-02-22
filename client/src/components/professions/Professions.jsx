@@ -7,8 +7,8 @@ import './professions.css'
 
 function Professions() {
   return (
-    <Container>
-        <Row>
+    <Container className='my-5'>
+        <Row className='mb-4'>
             <h2>Profesiones</h2>
         </Row>
         <Row>

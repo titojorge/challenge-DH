@@ -8,7 +8,7 @@ import Search from './Search';
 
 function Menu() {
   return (
-    <Navbar expand="lg" className="nav">
+    <Navbar expand="lg" className="nav py-3">
       <Container>
         <Navbar.Brand href="#home" className='logo'>KIKE-SA</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -7,7 +7,7 @@ import './applicants.css'
 
 function Applicants() {
   return (
-    <Container>
+    <Container className='my-5'>
         <Row>
             <h2>Aspirantes</h2>
         </Row>
