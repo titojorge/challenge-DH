@@ -44,13 +44,10 @@ module.exports= (sequelize, dataTypes) => {
 
     /* RELACIONES */
 
-    Profesion.associate= (models) =>{
-        Profesion.belongsToMany(models.Aspirante,{
-            as: 'aspirantes',
-            through: 'aspirantes_profesiones',
-            foreignKey: 'profesion_id',
-            otherKey: 'aspirante_id',
-            timestamps: false
+    Profesion.associate = function(models){
+        Profesion.hasMany(models.Aspirantes_Profesiones, {
+            as: "AspirantesProfesiones",
+            foreignKey: "id_profesion"
         })
     }
 
