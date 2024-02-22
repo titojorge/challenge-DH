@@ -18,6 +18,7 @@ const Applicants = () => {
                 console.error('No se encontro al aspirante ', error);
         };
         traerAspirante();
+    }
     }, []);
 
   return (
