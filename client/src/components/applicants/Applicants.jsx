@@ -1,11 +1,25 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import './applicants.css'
 
-function Applicants() {
+const Applicants = () => {
+    const [aspirante, setAspirante] = useState([]);
+    
+    useEffect(() => {
+        const traerAspirante = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/aspirante');
+                const data = await response.json();
+                setAspirante(data.aspirante);
+            } catch (error) {
+                console.error('No se encontro al aspirante ', error);
+        };
+        traerAspirante();
+    }, []);
+
   return (
     <Container className='my-5'>
         <Row>
