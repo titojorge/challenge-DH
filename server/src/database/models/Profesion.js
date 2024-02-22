@@ -18,6 +18,10 @@ module.exports= (sequelize, dataTypes) => {
             type: dataTypes.INTEGER,
             allowNull: true
         },
+        fecha_modificacion: {
+            type: dataTypes.DATEONLY,
+            allowNull: true
+        },
         usuario_modificacion:{
             type: dataTypes.INTEGER,
             allowNull: true
