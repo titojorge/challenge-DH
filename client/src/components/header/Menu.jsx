@@ -17,7 +17,7 @@ function Menu() {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
           </Nav>
-        <Search />
+          <Search />
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -1,0 +1,9 @@
+.row h2 {
+    text-align: center;
+}
+
+.col-card {
+    display: flex;
+    justify-content: center;
+    margin: 14px 0;
+}
