@@ -1,9 +1,14 @@
-.carousel-caption {
-    top: 240px;
+.carousel-content {
+    display: flex;
+    justify-content: center;
 }
 
-.img-hero {
-    color: #000;
+.carousel {
+    max-width: 1300px;
+}
+
+.carousel-caption {
+    top: 240px;
 }
 
 h1 {
