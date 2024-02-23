@@ -22,7 +22,7 @@ const Applicants = () => {
     }, []);
 
   return (
-    <Container className='my-5'>
+    <Container className='my-5' id='aspirantes'>
         <Row>
             <h2>Aspirantes</h2>
         </Row>

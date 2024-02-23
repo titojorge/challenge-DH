@@ -7,7 +7,7 @@ import './professions.css'
 
 function Professions() {
   return (
-    <Container className='my-5'>
+    <Container className='my-5' id='profesiones'>
         <Row className='mb-4'>
             <h2>Profesiones</h2>
         </Row>
