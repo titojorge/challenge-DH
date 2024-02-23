@@ -6,8 +6,6 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        // created_at: dataTypes.TIMESTAMP,
-        // updated_at: dataTypes.TIMESTAMP,
         nombres: {
             type: dataTypes.STRING(50),
             allowNull: false
@@ -90,9 +88,9 @@ module.exports = (sequelize, dataTypes) => {
     const Aspirante = sequelize.define(alias, cols, config); 
 
     Aspirante.associate = function(models){
-        Aspirante.hasMany(models.Aspirantes_Profesiones, {
-            as: "AspirantesProfesiones",
-            foreignKey: "id_aspirante"
+        Aspirante.belongsTo(models.Profesion, {
+            as: "Profesion",
+            foreignKey: "id_profesion"
         })
     }
  

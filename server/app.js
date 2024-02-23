@@ -9,7 +9,7 @@ const dotenv = require('dotenv')
 
 /**------METODOS DE APLICACION GLOBAL------*/
 app.use(cors());
-app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.static(path.join(__dirname, "../server/public")));
 app.use(express.json());
 /*Configuracion de variable de entorno*/
 dotenv.config()

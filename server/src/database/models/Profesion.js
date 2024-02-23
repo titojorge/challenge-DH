@@ -45,8 +45,8 @@ module.exports= (sequelize, dataTypes) => {
     /* RELACIONES */
 
     Profesion.associate = function(models){
-        Profesion.hasMany(models.Aspirantes_Profesiones, {
-            as: "AspirantesProfesiones",
+        Profesion.hasMany(models.Aspirante, {
+            as: "Aspirante",
             foreignKey: "id_profesion"
         })
     }
