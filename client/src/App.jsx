@@ -10,7 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Professions from './components/professions/Professions'
-import Footer from './components/Footer/Footer'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
