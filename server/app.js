@@ -7,6 +7,7 @@ const aspiranteRouter = require('./src/routes/api/aspirantes')
 const profesionRouter = require('./src/routes/api/profesiones')
 const dotenv = require('dotenv')
 
+
 /**------METODOS DE APLICACION GLOBAL------*/
 app.use(cors());
 app.use(express.static(path.join(__dirname, "../server/public")));
@@ -17,6 +18,7 @@ const PORT = process.env.PORT
 
 /**------RUTAS------*/
 app.use('/', aspiranteRouter)
+
 app.use('/', profesionRouter)
 
 app.listen(PORT, () => {
