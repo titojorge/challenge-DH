@@ -5,6 +5,22 @@ import Col from 'react-bootstrap/esm/Col';
 import Button from 'react-bootstrap/esm/Button';
 import './professions.css'
 
+const profesiones = () => {
+    const [profesiones, setProfesiones] = useState([]);
+    
+    useEffect(() => {
+        const fetchProfesiones = async () => {
+            try {
+                const response = await fetch('http://localhost:3000/profesiones');
+                const data = await response.json();
+                setAspirante(data.profesiones);
+            } catch (error) {
+                console.error('Error ', error);
+            };    
+        }
+        fetchProfesiones();
+    }, []);
+
 function Professions() {
   return (
     <Container className='my-5' id='profesiones'>

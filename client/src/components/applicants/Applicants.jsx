@@ -28,6 +28,7 @@ const Applicants = () => {
         </Row>
         <Row xs={1} md={2} lg={3} xl={4}>
             <Col className='col-card'>
+            {aspirantes.map((aspirante) =>
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="../../public/images/foto6.jpg" />
                     <Card.Body>
@@ -80,7 +81,8 @@ const Applicants = () => {
                             Economista
                         </Card.Text>
                     </Card.Body>
-                </Card>   
+                </Card>
+            )}   
             </Col>
         </Row>
     </Container>
