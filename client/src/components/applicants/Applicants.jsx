@@ -18,7 +18,6 @@ class Applicants extends Component{
         fetch('http://localhost:3000/aspirantes')
             .then( respuesta =>  { return respuesta.json() })
             .then( data => { 
-                console.log(data.data);
                 this.setState({
                     listApplicants : data.aspirantes
                 })
