@@ -23,7 +23,7 @@ const profesionApiController= {
                 })
                 return res.json({
                     total : profesiones.length,
-                    data: data
+                    profesiones: data
                 })
             })
             .catch(error =>{

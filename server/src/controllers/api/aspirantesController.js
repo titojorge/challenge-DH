@@ -30,7 +30,7 @@ const aspiranteApiController = {
         });
         return res.json({
           total: aspirantes.length,
-          data: data,
+          aspirantes: data,
         });
       })
       .catch((error) => {
