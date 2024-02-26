@@ -20,7 +20,7 @@ class Applicants extends Component{
             .then( data => { 
                 console.log(data.data);
                 this.setState({
-                    listApplicants : data.data
+                    listApplicants : data.aspirantes
                 })
             })
             .catch( error => console.log(error))
@@ -34,8 +34,8 @@ class Applicants extends Component{
                 </Row>
                 <Row xs={1} md={2} lg={3} xl={4}>
                     <Col className='col-card'>
-                    {this.state.listApplicants.map((aspirante) =>
-                        <Card style={{ width: '18rem' }}>
+                    {this.state.listApplicants.map((aspirante, i) =>
+                        <Card key={i} style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={"http://localhost:3000/" + aspirante.imagen_perfil} />
                             <Card.Body>
                                 <Card.Title>{aspirante.nombres + " " +aspirante.apellidos}</Card.Title>

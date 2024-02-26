@@ -20,7 +20,7 @@ class Professions extends Component{
             .then( data => { 
                 console.log(data.data);
                 this.setState({
-                    listProfessions : data.data
+                    listProfessions : data.profesiones
                 })
             })
             .catch( error => console.log(error))
@@ -32,8 +32,8 @@ class Professions extends Component{
                 <Row className='mb-4'>
                     <h2>Profesiones</h2>
                 </Row>
-                {this.state.listProfessions.map((profesion) =>
-                <Row>
+                {this.state.listProfessions.map((profesion, i) =>
+                <Row key={i}>
                     <Col className="d-grid gap-2">
                         <Button variant="secondary" size="lg">
                             {profesion.nombre_profesion}
