@@ -13,13 +13,14 @@ const profesiones = () => {
             try {
                 const response = await fetch('http://localhost:3000/profesiones');
                 const data = await response.json();
-                setAspirante(data.profesiones);
+                setProfesiones(data.profesiones);
             } catch (error) {
                 console.error('Error ', error);
             };    
         }
         fetchProfesiones();
     }, []);
+}
 
 function Professions() {
   return (

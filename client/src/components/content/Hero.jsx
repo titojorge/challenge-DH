@@ -7,19 +7,19 @@ function Hero() {
     <div className='carousel-content'>
       <Carousel>
         <Carousel.Item interval={5000}>
-          <img className='img-hero' src="../../public/images/hero1.jpeg" alt=""/>
+          <img className='img-hero' src="/images/hero1.jpeg" alt=""/>
           <Carousel.Caption>
             <h1 className='title'>¡Descubre tu próxima aventura!</h1>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
-          <img className='img-hero' src="../../public/images/hero2.jpeg" alt="" />
+          <img className='img-hero' src="/images/hero2.jpeg" alt="" />
           <Carousel.Caption>
             <h1 className='title'>¡Descubre tu próxima aventura!</h1>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
-          <img className='img-hero' src="../../public/images/hero3.jpeg" alt="" />
+          <img className='img-hero' src="/images/hero3.jpeg" alt="" />
           <Carousel.Caption>
             <h1 className='title'>¡Descubre tu próxima aventura!</h1>
           </Carousel.Caption>

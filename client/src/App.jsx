@@ -10,7 +10,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Professions from './components/professions/Professions'
-import Footer from './components/footer/Footer'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <Row>
         <Col>
           <Menu />
-        </Col>
+        </Col> 
       </Row>
       <Row>
         <Col>
