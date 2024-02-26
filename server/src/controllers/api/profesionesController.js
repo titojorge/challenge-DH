@@ -22,6 +22,10 @@ const profesionApiController= {
                     data.push(dataProfesion)
                 })
                 return res.json({
+                    meta: {
+                        status: 200,
+                        message: "Success"
+                    },
                     total : profesiones.length,
                     profesiones: data
                 })

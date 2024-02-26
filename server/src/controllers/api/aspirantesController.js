@@ -29,6 +29,10 @@ const aspiranteApiController = {
           data.push(dataAspirante);
         });
         return res.json({
+          meta: {
+            status: 200,
+            message: "Success"
+          },
           total: aspirantes.length,
           aspirantes: data,
         });
