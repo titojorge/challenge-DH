@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 function Search() {
   return (
-    <Form inline>
+    <Form inline='true'>
         <Row>
           <Col xs="auto">
             <Form.Control

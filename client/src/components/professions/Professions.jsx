@@ -18,7 +18,6 @@ class Professions extends Component{
         fetch('http://localhost:3000/profesiones')
             .then( respuesta =>  { return respuesta.json() })
             .then( data => { 
-                console.log(data.data);
                 this.setState({
                     listProfessions : data.profesiones
                 })
